@@ -38,3 +38,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.qfp.filter_liftfinger=0 \
     persist.qfp.wup_display=0 \
     persist.qfp.capacitive_enabled=1
+
+# LCD Density
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sf.lcd_density=440
