@@ -30,5 +30,8 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 # Kernel
 TARGET_KERNEL_CONFIG += vendor/xiaomi/capricorn.config
 
+# Properties
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
+
 # inherit from the proprietary version
 -include vendor/xiaomi/capricorn/BoardConfigVendor.mk
