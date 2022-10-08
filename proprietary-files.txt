@@ -183,12 +183,12 @@ vendor/lib/libchromatix_ov4688_primax_a7_zsl_preview_ad5823.so
 vendor/lib/libchromatix_ov4688_primax_a7_zsl_video_ad5823.so
 
 # Camera configs
-etc/camera/imx378_chromatix.xml
-etc/camera/imx378_liteon_chromatix.xml
-etc/camera/imx378_semco_chromatix.xml
-etc/camera/msm8996_camera.xml
-etc/camera/ov4688_a7_chromatix.xml
-etc/camera/ov4688_primax_a7_chromatix.xml
+system/etc/camera/imx378_chromatix.xml:vendor/etc/camera/imx378_chromatix.xml
+system/etc/camera/imx378_liteon_chromatix.xml:vendor/etc/camera/imx378_liteon_chromatix.xml
+system/etc/camera/imx378_semco_chromatix.xml:vendor/etc/camera/imx378_semco_chromatix.xml
+system/etc/camera/msm8996_camera.xml:vendor/etc/camera/msm8996_camera.xml
+system/etc/camera/ov4688_a7_chromatix.xml:vendor/etc/camera/ov4688_a7_chromatix.xml
+system/etc/camera/ov4688_primax_a7_chromatix.xml:vendor/etc/camera/ov4688_primax_a7_chromatix.xml
 
 # Camera eeproms
 vendor/lib/libmmcamera_ov4688_eeprom.so
