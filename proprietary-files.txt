@@ -50,17 +50,6 @@ vendor/lib/libchromatix_imx378_hfr_60.so
 vendor/lib/libchromatix_imx378_hfr_60_3a.so
 vendor/lib/libchromatix_imx378_hfr_90.so
 vendor/lib/libchromatix_imx378_hfr_90_3a.so
-vendor/lib/libchromatix_imx378_liveshot.so
-vendor/lib/libchromatix_imx378_postproc.so
-vendor/lib/libchromatix_imx378_preview.so
-vendor/lib/libchromatix_imx378_snapshot.so
-vendor/lib/libchromatix_imx378_snapshot_hdr.so
-vendor/lib/libchromatix_imx378_video.so
-vendor/lib/libchromatix_imx378_video_16M_3a.so
-vendor/lib/libchromatix_imx378_video_4k.so
-vendor/lib/libchromatix_imx378_video_hdr.so
-vendor/lib/libchromatix_imx378_zsl_preview.so
-vendor/lib/libchromatix_imx378_zsl_video.so
 vendor/lib/libchromatix_imx378_liteon_1080p_preview.so
 vendor/lib/libchromatix_imx378_liteon_1080p_video.so
 vendor/lib/libchromatix_imx378_liteon_4k_preview.so
@@ -100,6 +89,9 @@ vendor/lib/libchromatix_imx378_liteon_video_4k.so
 vendor/lib/libchromatix_imx378_liteon_video_hdr.so
 vendor/lib/libchromatix_imx378_liteon_zsl_preview.so
 vendor/lib/libchromatix_imx378_liteon_zsl_video.so
+vendor/lib/libchromatix_imx378_liveshot.so
+vendor/lib/libchromatix_imx378_postproc.so
+vendor/lib/libchromatix_imx378_preview.so
 vendor/lib/libchromatix_imx378_semco_1080p_preview_3a.so
 vendor/lib/libchromatix_imx378_semco_1080p_video_3a.so
 vendor/lib/libchromatix_imx378_semco_4k_preview_3a.so
@@ -139,6 +131,14 @@ vendor/lib/libchromatix_imx378_semco_video_4k.so
 vendor/lib/libchromatix_imx378_semco_video_hdr.so
 vendor/lib/libchromatix_imx378_semco_zsl_preview.so
 vendor/lib/libchromatix_imx378_semco_zsl_video.so
+vendor/lib/libchromatix_imx378_snapshot.so
+vendor/lib/libchromatix_imx378_snapshot_hdr.so
+vendor/lib/libchromatix_imx378_video.so
+vendor/lib/libchromatix_imx378_video_16M_3a.so
+vendor/lib/libchromatix_imx378_video_4k.so
+vendor/lib/libchromatix_imx378_video_hdr.so
+vendor/lib/libchromatix_imx378_zsl_preview.so
+vendor/lib/libchromatix_imx378_zsl_video.so
 vendor/lib/libchromatix_ov4688_a7_common.so
 vendor/lib/libchromatix_ov4688_a7_cpp_hfr_120.so
 vendor/lib/libchromatix_ov4688_a7_cpp_hfr_60.so
@@ -191,22 +191,22 @@ etc/camera/ov4688_a7_chromatix.xml
 etc/camera/ov4688_primax_a7_chromatix.xml
 
 # Camera eeproms
-vendor/lib/libmmcamera_sony_imx378_eeprom.so
 vendor/lib/libmmcamera_ov4688_eeprom.so
+vendor/lib/libmmcamera_sony_imx378_eeprom.so
 
 # Camera sensors
+vendor/lib/libSonyIMX378PdafLibrary.so
 vendor/lib/libmmcamera_imx378.so
 vendor/lib/libmmcamera_imx378_liteon.so
 vendor/lib/libmmcamera_imx378_semco.so
 vendor/lib/libmmcamera_ov4688_a7.so
 vendor/lib/libmmcamera_ov4688_primax_a7.so
-vendor/lib/libSonyIMX378PdafLibrary.so
 
 # Display calibration data
+etc/qdcm_calib_data_sharp_fhd_cmd_incell_dsi_panel.xml:vendor/etc/qdcm_calib_data_sharp_fhd_cmd_incell_dsi_panel.xml
 vendor/etc/qdcm_calib_data_jdi_fhd_cmd_incell_dsi_panel.xml|73c66f2479714619c394d4e19863521d622da6db
 vendor/etc/qdcm_calib_data_jdi_j1_fhd_cmd_incell_dsi_panel.xml|73c66f2479714619c394d4e19863521d622da6db
 vendor/etc/qdcm_calib_data_lgd_fhd_cmd_incell_dsi_panel.xml|bb10ca71e619811a7e0b44f2bad03f7b8eb7e324
-etc/qdcm_calib_data_sharp_fhd_cmd_incell_dsi_panel.xml:vendor/etc/qdcm_calib_data_sharp_fhd_cmd_incell_dsi_panel.xml
 
 # Fingerprint
 -vendor/app/QFingerprintService/QFingerprintService.apk
@@ -225,5 +225,5 @@ vendor/firmware/a530_zap.mdt
 vendor/firmware/libpn548ad_fw.so:vendor/lib/libpn548ad_fw.so
 
 # Sensors
-vendor/etc/sensors/hals.conf|bf3677cbfa5ce5735662e8c259cb027969f65c87
 etc/sensors/sensor_def_qcomdev.conf
+vendor/etc/sensors/hals.conf|bf3677cbfa5ce5735662e8c259cb027969f65c87
